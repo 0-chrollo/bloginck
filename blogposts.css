@@ -1,0 +1,121 @@
+.header {
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 17vw;
+    box-sizing: border-box;
+
+    z-index: 10000;
+}
+
+.header nav {
+
+    position: fixed;
+    background-color:rgb(0, 0, 0);
+    height: 200%;
+    top: 6.9vh;
+    left: 100%;
+    width: 100%;
+   
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+
+.more{
+
+
+text-decoration: none;
+
+}
+
+.header nav .option  {
+    margin-top: 40px;
+    background-color: rgba(209, 234, 255, 0.75);
+padding:10px;
+    border:  rgba(0, 97, 176, 0.191) solid 2px;
+    width: fit-content;
+    color: #000000af;
+    text-decoration: none;
+    margin-left:8%;
+    display: block;
+    margin-bottom: 5vh;
+    border-radius: 14px;
+    font-size: 15px;
+   
+}
+
+
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle + label {
+    display: none;
+    font-size: 140%;
+  
+  
+    
+  color: azure;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 5vw;
+    }
+
+    .menu-toggle + label {
+        display: block;
+    }
+
+    .menu-toggle:checked ~ nav {
+       left:35%;
+
+    .fa-spinner {
+        font-size: 4vw;
+    }
+}
+}
+
+
+
+.accordion {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-family: cursive;
+  }
+  
+
+
+
+  
+  .accordion-toggle {
+  
+    border: none;
+    font-size: 22px;
+    color: #0041c4;
+   
+  }
+  
+  .accordion-content {
+    list-style-type: none;
+    margin: 0;
+    padding:9px;
+    display: none;
+  }
+  
+  .accordion.active .accordion-toggle::after {
+    content: "-";
+  }
+  
+  .accordion.active .accordion-content {
+    display: block;
+  }
+  
+  

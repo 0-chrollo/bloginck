@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="blogposts.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+    <header class="header">
+        
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+       <label for="menu-toggle">&#9776;</label>
+      
+        
+        <!-- Here is the burger menu icon -->
+      
+      <nav>
+        <div class="accordion">
+             
+              <div class="accordion-header">
+        <a  class="option">Writeblog</a> <p href="#" class="accordion-toggle" style="color: azure; margin-top: -89px; margin-left: 149px; font-size: 25px;">+</p>
+        <ul class="accordion-content">
+        <p><a style="color: aliceblue; text-decoration: none;padding-left: 20px;" href="nav.html">Readlist</a></p>
+      <p><a style="color: aliceblue; text-decoration: none;padding-left: 20px;" href="nav.html">Categories</a></p>
+      <p><a style="color: aliceblue; text-decoration: none;padding-left: 20px;" href="nav.html">Notifications</a></p> 
+      <p><a style="color: aliceblue; text-decoration: none;padding-left: 20px;" href="nav.html">Privacy Policy</a></p>
+
+
+        </ul>
+              </div>
+        </div>
+        <div class="accordion">
+             
+          <div class="accordion-header">
+    <a  class="option">About us</a> <p class="accordion-toggle" style="color: azure; margin-top: -88px; margin-left: 140px; font-size: 25px;">+</p>
+    <ul class="accordion-content">
+    <p><a style="color: aliceblue; text-decoration: none;padding-left: 20px;" href="nav.html">Our Blog</a></p>
+  <p><a style="color: aliceblue; text-decoration: none;padding-left: 20px;" href="nav.html"> About </a></p>
+
+
+
+
+    </ul>
+          </div>
+        </div>
+
+
+
+      </ul>
+            <a class="option" href="#">Contact</a>
+        </nav>
+
+        <h3 style="color: #fff;">bloginck</h3>
+        <h3 style="color: #fff;"> <div class="blogprofile">
+          <a href="profile.html"> <img   class="blogdp" src="profile.png" alt="profileblog"></a>
+        </div></h3>
+    </header>
+
+    <body>
+    <main align="center" style="margin-top: 60px; font-family: 'sans-serif';">
+
+     
+    </main>
+    
+    </main>
+
+
+
+
+
+
+
+<script>
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const accordions = document.querySelectorAll('.accordion');
+
+  accordions.forEach(function(accordion) {
+    const header = accordion.querySelector('.accordion-header');
+    const content = accordion.querySelector('.accordion-content');
+    const toggle = accordion.querySelector('.accordion-toggle');
+
+    header.addEventListener('click', function() {
+      accordion.classList.toggle('active');
+      if (accordion.classList.contains('active')) {
+        content.style.display = 'block';
+        toggle.textContent = '-';
+      } else {
+        content.style.display = 'none';
+        toggle.textContent = '+';
+      }
+    });
+  });
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+<br>
+
+<br>
+
+    
+    <style>
+
+
+       
+     .car-post {
+       
+        
+padding: 7px;
+        
+     }
+     
+     .poster-avatar {
+         width: 70px;
+         height: 70px;
+      
+     }
+
+
+     .blogprofile{
+margin-right: -35px;
+   margin-top: 20px;
+      width: 60px;
+         height: 55px;
+
+     }
+     
+     .blogprofile .blogdp{
+
+      width: 63%;
+         height: 65%;
+         border-radius: 50%;;
+
+}
+
+
+     .poster-avatar .image {
+         width: 100%;
+         height: 100%;
+         border-radius: 50%;
+     }
+     
+     .poster-name {
+         font-size: 12px;
+         font-weight: bold;
+        
+     }
+     
+     .car-image {
+         margin-bottom: 10px;
+     }
+     
+     .car-image img {
+         width: 100%;
+         height: auto;
+     }
+     
+     .car-description {
+         margin-bottom: 10px;
+       
+     }
+     
+     #car-title {
+         font-size: 16px;
+         font-weight: bold;
+       
+     }
+     
+     .date-time {
+         margin-top: 10px;
+         
+     }
+     
+     .date, .time {
+       font-size: 8px;
+         margin-left: 1px;
+     } 
+       .poster-info {
+         display: flex;
+         align-items: center;
+         padding: 11px;
+      
+       }
+   
+       
+       .poster-avatar {
+         width: 50px;
+         height: 50px;
+         border-radius: 90%;
+         margin-right: 10px;
+       }
+       
+       .poster-avatar img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+       }
+       
+       .poster-name {
+         font-weight: bold;
+       }
+       
+       .car-image {
+         width: 100%;
+         height: auto;
+       }
+       
+       .car-image img {
+         width: 100%;
+         height: 0%;
+         object-fit: cover;
+       }
+       .date-time {
+         display: flex;
+         align-items: center;
+         font-size: 1px;
+         margin-bottom: 10px;
+        
+       }
+       
+       .date-time .glyphicon {
+         font-size: 18px;
+         margin-right: 5px;
+      
+       }
+       .post-image img {
+         width: 100%;
+         height: auto;
+         max-height: 200px;
+        
+       }
+       
+       .post-title {
+         font-size: 1.2em;
+         margin-bottom: 5px;
+       }
+       
+       .post-date {
+         color: #b9b9b9;
+         font-size:4px;
+         margin-bottom: 10px;
+     
+       }
+       
+       @media screen and (max-width: 768px) {
+         .post {
+         
+          
+         }
+       }
+        
+     
+     
+     
+     </style>
+     
+     
+     
+     
+     <div class="Blog">
+     
+     
+     <article class="car-post">
+       <div class="poster-info">
+         <div class="poster-avatar">
+           <img class="image" src="profiler.jpg" alt="Profile Picture">
+         </div>
+         <div class="poster-name">
+           Lucas_Mkohlakalii
+         </div>
+     
+           <span style="margin:2%;" >|</span>
+           <p class="date">March 5, 2023</p>
+           <span class="glyphicon glyphicon-time" style="margin-left: 1px; margin-right: 2px;"></span>
+           <p class="time">3:00 PM</p>
+       </div>
+       <h3 id="car-title" style="font-size: 15px;"> !! How The Ford Mustang 2023 S650 Has been Tweaking Enormous Rates</h3><br>
+       <div class="car-image">
+         <img id="car-img" src="metal.jpg" alt="Car Image">
+       </div>
+       <div class="car-description">
+           <h2 id="car-title">2023 Ford Mustang S650..</h2>
+          
+           <div class="date-time">
+             <span class="glyphicon glyphicon-calendar"></span>
+             <p class="date">Read :</p>
+             <span class="glyphicon glyphicon-time" style="margin-left: 10px; margin-right: 5px;"></span>
+             <p class="time">10 min</p>
+           </div>
+           
+         <p id="car-desc">The 2023 Ford Mustang Model S is the latest version of Ford's Super cars. It features a redesigned exterior, improved range, and a new interior with a horizontallly Heart warming <a style="color: rgb(11, 11, 226); text-decoration: none;" href="post.html"> Read more</a>...</p>
+       </div>
+     
+     </article>
+     </div>
+     <hr>
+
+     <br>
+
+     
+
+  
+  
+  
+</body>
+</html>
