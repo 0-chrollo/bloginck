@@ -54,6 +54,8 @@ padding:10px;
 
 .menu-toggle {
     display: none;
+       
+  color: azure;
 }
 
 .menu-toggle + label {
@@ -76,7 +78,8 @@ padding:10px;
 
     .menu-toggle:checked ~ nav {
        left:35%;
-
+   
+       color: azure;
     .fa-spinner {
         font-size: 4vw;
     }
